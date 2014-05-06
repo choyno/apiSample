@@ -1,0 +1,5 @@
+q!
+uAuthType Basic
+	AuthName "Restricted Files"
+	AuthUserFile /var/www/dmmApi/ 
+	Require dmm ldmml

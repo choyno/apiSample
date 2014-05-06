@@ -1,0 +1,20 @@
+<?php
+
+$res = array(
+  "result_code" => 0,
+  "result_message" => "OK",
+  "result" => array()
+);
+
+$date = date('YmdHis');
+
+for($i = 1; $i <= 50; $i++){
+  $res['result'][] = array(
+    'id' => (String)$i,
+    'teacher_name' => "teacher_{$i}",
+    'image' => "/teacher/image/{$i}/{$date}.jpg"
+  );
+}
+
+echo json_encode($res);
+

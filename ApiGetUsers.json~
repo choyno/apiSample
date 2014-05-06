@@ -1,0 +1,28 @@
+{
+    "result_code": 0,
+    "result_message": "OK",
+    "sum": "1",
+    "page": 1,
+    "result": [
+        {
+            "id": "1",
+            "username": "rdy",
+            "password": "testpassword"
+        },
+        {
+            "id": "2",
+            "username": "jmonsanto",
+            "password": "testpassword"
+        },
+        {
+            "id": "3",
+            "username": "jcorsiga",
+            "password": "testpassword"
+        },
+        {
+            "id": "4",
+            "username": "alopez",
+            "password": "testpassword"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+
+	AuthType Basic
+	AuthName "Restricted Files"
+	AuthUserFile /var/www/dmmApi/.htpassword
+	Require user dmm ldmm1
+	RewriteRule ^([a-zA-Z0-9]+|)/?$ $1
+
+
