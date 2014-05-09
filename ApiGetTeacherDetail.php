@@ -22,6 +22,7 @@ $res = array(
   "hobby" => "Basketball",
   "favorite_movie" => "Iron-Man 3",
   "en_intro" => "lorem ipsum lorm ipsum lorem ipson tatoy",
+  "jap_intro" => "lorem ipsum lorem ipsum lorem issom lorem ipsom",
   "work_type" => "work type*",
   "skype" => "skype.dmm.com",
   "gender" => 1,
@@ -37,9 +38,9 @@ $res = array(
     array("type_id" => 2, "type_name" => "type name2")
   ),
   "evaluation" => array(
-    array("evaluation_comment" => "evaluation comment here1", "regist_datetime" => "2014-01-24 12:22:45"),
-    array("evaluation_comment" => "evaluation comment here2", "regist_datetime" => "2014-01-24 12:22:45"),
-    array("evaluation_comment" => "evaluation comment here3", "regist_datetime" => "2014-01-24 12:22:45")
+    array("evaluation_comment" => "evaluation comment here1", "member_name" => "User1", "regist_datetime" => "2014-01-24 12:22:45"),
+    array("evaluation_comment" => "evaluation comment here2", "member_name" => "User2", "regist_datetime" => "2014-01-24 12:22:45"),
+    array("evaluation_comment" => "evaluation comment here3", "member_name" => "User3", "regist_datetime" => "2014-01-24 12:22:45")
   )
 );
 
