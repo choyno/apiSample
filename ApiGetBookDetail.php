@@ -27,7 +27,7 @@ $res = array(
   'message' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   'sentence' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.',
   'word' => array(),
-  'evaluation' => true,
+  'evaluation' => 1,
   'evaluation_comment' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 );
 

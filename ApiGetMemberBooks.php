@@ -40,7 +40,9 @@ for($i = 23; $i >= 1;) {
     'teacher_name' => "teacher_name_{$i}",
     'image' => "http://".$_SERVER['HTTP_HOST']."/f545.jpg",
     'lesson_date' => date("Y-m-d", strtotime($pass_date." ".($i-1)." day")),
-    'scheduled_start_time' => $tmp_sched_time
+    'scheduled_start_time' => $tmp_sched_time,
+    'studend_wish' => 'Student Wish',
+    'evaluation' => (mt_rand(1, 10) % 2 ? 1 : 0)
   );
 
   $tmp++;

@@ -27,7 +27,11 @@ for($i = 1; $i <= 20; $i++){
   $res['result'][] = array(
     'inquiry_thread_id' => $i,
     'person_type' => (mt_rand(1, 10) % 2 ? 'm' : 'c'),
-    'message' => "Message Lorem Ispsum #{$i}",
+    'message' => "Message Lorem Ispsum
+    Tsest
+    ata
+    test
+    Lorem Isum Lorem Isum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum#{$i}",
     'inquiry_thread_date_time' => date('Y-m-d H:i:s')
   );
 }

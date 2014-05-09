@@ -18,7 +18,7 @@ $res = array(
   'result' => array()
 );
 
-for($i = 1; $i <= 30; $i++){
+for($i = 1; $i <= 20; $i++){
   $res['result'][] = array(
     'inquiry_id' => $i,
     'subject' => "Lorem Ipsum Subject #{$i}",
