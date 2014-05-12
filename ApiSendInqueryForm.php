@@ -21,7 +21,7 @@
 <tr>
 <td>title</td>
 <td>
-<select name="title" id="title">
+<select name="subject" id="subject">
 <option value="選択してください" >選択してください</option>
 <option value="予約について" >予約について</option>
 <option value="レッスン内容について" >レッスン内容について</option>

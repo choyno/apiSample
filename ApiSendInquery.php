@@ -12,7 +12,7 @@ exit; **/
 if (isset($_POST['member_id']) && isset($_POST['key']) && $_POST['key'] == 'Uggk45hcn98'){
   if (empty($_POST['member_id'])){
     $name = "member_id";
-  } elseif (empty($_POST['title'])){
+  } elseif (empty($_POST['subject'])){
     $name = "title";
   } elseif (empty($_POST['content'])){
     $name = "content";
