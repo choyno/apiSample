@@ -17,22 +17,22 @@ if (!empty($msg)){
 $res = array(
   'result_code' => 0,
   'result_message' => 'OK',
-  'inquiry_id' => $_GET['inquiry_id'],
+  'inquiry_thread_id' => $_GET['inquiry_id'],
   'subject' => 'Lorem Ipsum Lorem Ipsum',
-  'inquiry_date_time' => date('Y-m-d H:i:s'),
+  'inquiry_thread_date_time' => date('Y-m-d H:i:s'),
   'result' => array()
 );
 
 for($i = 1; $i <= 20; $i++){
   $res['result'][] = array(
-    'inquiry_thread_id' => $i,
+    'inquiry_id' => $i,
     'person_type' => (mt_rand(1, 10) % 2 ? 'm' : 'c'),
     'message' => "Message Lorem Ispsum
     Tsest
     ata
     test
     Lorem Isum Lorem Isum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum#{$i}",
-    'inquiry_thread_date_time' => date('Y-m-d H:i:s')
+    'inquiry_date_time' => date('Y-m-d H:i:s')
   );
 }
 

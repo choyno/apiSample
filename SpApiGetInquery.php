@@ -20,8 +20,10 @@ $res = array(
 
 for($i = 1; $i <= 20; $i++){
   $res['result'][] = array(
-    'inquiry_id' => $i,
-    'subject' => "Lorem Ipsum Subject #{$i}",
+    'inquiry_thread_id' => $i,
+    'inquiry_thread_size' => ($i == 4 ? 7 : 6),
+    'status' => rand(1, 15) % 2 == 0 ? 0 : 1,
+    'subject_name' => "Lorem Ipsum Subject #{$i}",
     'inquiry_date_time' => date('Y-m-d H:m:s', strtotime("+{$i} hour"))
   );
 }

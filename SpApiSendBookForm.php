@@ -4,7 +4,7 @@
 </head>
 <body>
 
-<form method="post" action="ApiSendBook.php" >
+<form method="post" action="SpApiSendBook.php" >
 <input type="hidden" name="key" id="key" value="Uggk45hcn98" />
 <table>
 <thead>

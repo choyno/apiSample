@@ -9,7 +9,7 @@ if (!isset($_GET['key']) || $_GET['key'] != 'Uggk45hcn98'){
 }
 
 if (!empty($msg)){
-  printResult(array('result_code' => '201', 'result_message' => "{$msg} is required"));
+  printResult(array('result_code' => '201', 'result_message' => "{$msg} is required"), false);
 }
 
 
@@ -38,7 +38,7 @@ for($i = 23; $i >= 1;) {
     'book_id' => $tmp,
     'teacher_id' => $i,
     'teacher_name' => "teacher_name_{$i}",
-    'image' => "http://".$_SERVER['HTTP_HOST']."/f545.jpg",
+    'image' => "http://ariellopez.info/f545.jpg",
     'lesson_date' => date("Y-m-d", strtotime($pass_date." ".($i-1)." day")),
     'scheduled_start_time' => $tmp_sched_time,
     'studend_wish' => 'Student Wish',
@@ -55,7 +55,11 @@ for($i = 23; $i >= 1;) {
 
 printResult($res);
 
-function printResult($res){
+function printResult($res, $flag = true){
   header('Content-Type: application/json');
   echo json_encode($res);
+
+  if (!$flag){
+    exit;
+  }
 }
