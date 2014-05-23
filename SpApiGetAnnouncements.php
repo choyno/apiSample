@@ -18,8 +18,11 @@ $res = array(
   'announcement' => array()
 );
 
-for($i = 0; $i < 10; $i++) {
-  $res['announcement'][] = array('title' => "title_{$i}", 'content' => "content_{$i}", 'date' => date("Y-m-d", strtotime( $i." day")));
+for($i = 0; $i < 20; $i++) {
+  $res['announcement'][] = array(
+    'title' => "Lorem Ipsum is simply dummy{$i}",
+    'content' => "Lorem{$i} Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500",
+    'date' => date("Y-m-d", strtotime( $i." day")));
 }
 
 printResult($res);
