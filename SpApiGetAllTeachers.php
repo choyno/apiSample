@@ -1,7 +1,6 @@
 <?php
 
 $page = intval(@$_GET['page']) <= 0 ? 1 : intval($_GET['page']);
-$date = date('YmdHis');
 
 $res = array(
   'result_code' => 0,
@@ -10,10 +9,12 @@ $res = array(
   'page' => $page,
   'result' => array()
 );
+$i = 1;
+$i += ($page * 10) - 10;
 
-for($i = 1; $i <= 50; $i++){
+for(; $i <= ($page * 10); $i++){
   $res['result'][] = array(
-    'id' => (String)$i,
+    'teacher_id' => (String)$i,
     'teacher_name' => "Janica#{$i}（ジャニカ）",
     'teacher_type' => array("teacher_type #1"),
     'country_id' => 2,
