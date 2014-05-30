@@ -6,7 +6,7 @@ if (!isset($_GET['key']) || $_GET['key'] != 'Uggk45hcn98'){
   $msg = "key";
 } elseif (!isset($_GET['member_id']) || empty($_GET['member_id'])){
   $msg = "member_id";
-} elseif (!isset($_GET['inquiry_id']) || empty($_GET['inquiry_id'])){
+} elseif (!isset($_GET['inquiry_thread_id']) || empty($_GET['inquiry_thread_id'])){
   $msg = "inquiry_id";
 }
 
@@ -17,7 +17,7 @@ if (!empty($msg)){
 $res = array(
   'result_code' => 0,
   'result_message' => 'OK',
-  'inquiry_thread_id' => $_GET['inquiry_id'],
+  'inquiry_thread_id' => $_GET['inquiry_thread_id'],
   'subject' => 'Lorem Ipsum Lorem Ipsum',
   'inquiry_thread_date_time' => date('Y-m-d H:i:s'),
   'result' => array()
