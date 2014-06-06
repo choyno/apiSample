@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<form method="post" action="SpApiSendInquiry.php" >
+<form method="post" action="SpApiSendInquiry.php?key=Uggk45hcn98" >
 <input type="hidden" name="key" id="key" value="Uggk45hcn98" />
 <table>
 <thead>

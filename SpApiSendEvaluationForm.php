@@ -4,8 +4,7 @@
 </head>
 <body>
 
-<form method="post" action="SpApiSendEvaluation.php" >
-<input type="hidden" name="key" id="key" value="Uggk45hcn98" />
+<form method="post" action="SpApiSendEvaluation.php?key=Uggk45hcn98" >
 <table>
 <thead>
 <tr>

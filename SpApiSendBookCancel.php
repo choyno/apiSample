@@ -2,7 +2,7 @@
 
 $name = "";
 
-if (!isset($_POST['key']) || $_POST['key'] != 'Uggk45hcn98'){
+if (!isset($_POST['key']) || $_GET['key'] != 'Uggk45hcn98'){
   $name = "key";
 } elseif (!isset($_POST['member_id']) || empty($_POST['member_id'])){
   $name = "member_id";

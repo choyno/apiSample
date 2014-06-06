@@ -9,7 +9,7 @@ $name = "";
   echo json_encode(array('get'));
 }
 exit; **/
-if (isset($_POST['member_id']) && isset($_POST['key']) && $_POST['key'] == 'Uggk45hcn98'){
+if (isset($_POST['member_id']) && isset($_GET['key']) && $_GET['key'] == 'Uggk45hcn98'){
   if (empty($_POST['member_id'])){
     $name = "member_id";
   } elseif (empty($_POST['lesson_id'])){
