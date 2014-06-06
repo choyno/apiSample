@@ -6,8 +6,8 @@ if (!isset($_GET['key']) || $_GET['key'] != 'Uggk45hcn98'){
   $msg = "key";
 } else if (!isset($_GET['member_id']) || empty($_GET['member_id'])){
   $msg = "member_id";
-} elseif (!isset($_GET['is_incomming_lessons']) || empty($_GET['is_incomming_lessons'])){
-  $msg = "is_incomming_lessons";
+} elseif (!isset($_GET['is_incoming_lessons']) || empty($_GET['is_incoming_lessons'])){
+  $msg = "is_incoming_lessons";
 }
 
 if (!empty($msg)){
@@ -26,7 +26,7 @@ $date = date('YmdHis');
 $time = date('H:i:s');
 
 $tmpDate = date("Y-m-d", strtotime("-8 day"));
-if ($_GET['is_incomming_lessons'] == 1){
+if ($_GET['is_incoming_lessons'] == 1){
   $tmpDate = date("Y-m-d", strtotime("+10 day"));
 }
 
@@ -42,7 +42,7 @@ for($i = 5; $i >= 1;) {
   }
 
   $lesson_date = date("Y-m-d", strtotime($tmpDate." ".($i+1)." day"));
-  if ($_GET['is_incomming_lessons'] == 1){
+  if ($_GET['is_incoming_lessons'] == 1){
     $lesson_date = date("Y-m-d", strtotime($tmpDate." ".($i-1)." day"));
   }
 
