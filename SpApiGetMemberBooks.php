@@ -37,7 +37,7 @@ for($i = 23; $i >= 1;) {
   $res['result'][] = array(
     'book_id' => $tmp,
     'teacher_id' => $i,
-    'teacher_name' => "teacher_name_{$i}",
+    'teacher_name' => "Janica{$i}（ジャニカ）",
     'image' => "http://ariellopez.info/f545.jpg",
     'lesson_date' => date("Y-m-d", strtotime($pass_date." ".($i-1)." day")),
     'scheduled_start_time' => $tmp_sched_time,
