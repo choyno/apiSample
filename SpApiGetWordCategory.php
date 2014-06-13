@@ -7,7 +7,7 @@ $res = array(
 );
 
 for($i = 0; $i < 10; $i++) {
-  $res['result'][] = array('word_id' => $i, 'eng_word' => "eng_word_{$i}", 'jap_word' => "jap_word_{$i}", "date_time" => date('Y-m-d H:i:s', strtotime("{$i} hour")));
+  $res['result'][] = array('word_category_id' => $i, 'name' => "word#{$i}");
 }
 
 header('Content-Type: application/json');

@@ -2,17 +2,19 @@
 
 $msg = "";
 
+/**
 if (!isset($_GET['key']) || $_GET['key'] != 'Uggk45hcn98'){
   $msg = "key";
-} elseif (!isset($_GET['book_id']) || empty($_GET['book_id'])){
+} elseif (!isset($_POST['book_id']) || empty($_POST['book_id'])){
   $msg = "book_id";
-} elseif (!isset($_GET['member_id']) || empty($_GET['member_id'])){
+} elseif (!isset($_POST['member_id']) || empty($_POST['member_id'])){
   $msg = "member_id";
 }
 
 if (!empty($msg)){
   printResult(array('result_code' => '201', 'result_message' => "{$msg} is required"));
 }
+**/
 
 $res = array(
   'result_code' => 0,
@@ -23,11 +25,17 @@ $res = array(
   'teacher_id' => 339,
   'teacher_name' => 'Janica（ジャニカ）',
   'image' => "http://{$_SERVER['HTTP_HOST']}/f545.jpg",
-  'student_wish' => "Lesson Style:Shunkan Eisakubun (Dondon)[Part2 Chapter25]\nhttp://eikaiwa.dmm.com/download/pdf/shunkan_eisakubun__shunkan-eisakubun01_48s.pdf\nGrammar/pron. errors:Correct positively\nFor understanding words/expressions:Use the chat box\nEtc.:this is testing for cel",
+  'student_wish' => array(
+    'lesson_style' => 'Lesson Style:Shunkan Eisakubun (Dondon)[Part2 Chapter25]',
+    'link' => 'http://eikaiwa.dmm.com/download/pdf/shunkan_eisakubun__shunkan-eisakubun01_48s.pdf',
+    'pronunciation' => 'Grammar/pron. errors:Correct positively',
+    'written_words' => 'expressions:Use the chat box',
+    'etc' => 'this is testing for cel'
+  ),//"Lesson Style:Shunkan Eisakubun (Dondon)[Part2 Chapter25]\nhttp://eikaiwa.dmm.com/download/pdf/shunkan_eisakubun__shunkan-eisakubun01_48s.pdf\nGrammar/pron. errors:Correct positively\nFor understanding words/expressions:Use the chat box\nEtc.:this is testing for cel",
   'message' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   'sentence' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.',
   'word' => array(),
-  'evaluation' => 1,
+  'evaluation' => -1,
   'evaluation_comment' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 );
 

@@ -2,11 +2,11 @@
 
 $msg = "";
 
-if (!isset($_GET['key']) || $_GET['key'] != 'Uggk45hcn98'){
+/**if (!isset($_GET['key']) || $_GET['key'] != 'Uggk45hcn98'){
   $msg = "key";
-} else if (!isset($_GET['teacher_id']) || empty($_GET['teacher_id'])){
+} else if (!isset($_POST['teacher_id']) || empty($_POST['teacher_id'])){
   $msg = "teacher_id";
-}
+}**/
 
 if (!empty($msg)){
   printResult(array('result_code' => '201', 'result_message' => "{$msg} is required"));
@@ -15,7 +15,7 @@ if (!empty($msg)){
 $res = array(
   "result_code" => 0,
   "result_message" => "OK",
-  "teacher_id" => $_GET['teacher_id'],
+  "teacher_id" => 2,
   "teacher_name" => "Janica（ジャニカ）",
   "career" => "Full Time Teacher",
   "college" => "University of Cebu-Banilad",
@@ -25,7 +25,7 @@ $res = array(
   "ja_intro" => "lorem ipsum lorem ipsum lorem issom lorem ipsom",
   "work_type" => "work type*",
   "skype" => "skype.dmm.com",
-  "gender" => 1,
+  "gender" => "Male",
   "birthday" => "1992-04-14",
   "country_id" => 2,
   "image" => "http://{$_SERVER['HTTP_HOST']}/f545.jpg",
