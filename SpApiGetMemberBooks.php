@@ -4,9 +4,9 @@ $msg = "";
 
 if (!isset($_GET['key']) || $_GET['key'] != 'Uggk45hcn98'){
   $msg = "key";
-} else if (!isset($_POST['member_id']) || empty($_POST['member_id'])){
+} else if (!isset($_GET['member_id']) || empty($_GET['member_id'])){
   $msg = "member_id";
-} elseif (!isset($_POST['is_incoming_lessons']) || empty($_POST['is_incoming_lessons'])){
+} elseif (!isset($_GET['is_incoming_lessons']) || empty($_GET['is_incoming_lessons'])){
   $msg = "is_incoming_lessons";
 }
 
@@ -22,11 +22,10 @@ $res = array(
   'result' => array()
 );
 
-$date = date('YmdHis');
 $time = date('H:i:s');
 
 $tmpDate = date("Y-m-d", strtotime("-8 day"));
-if ($_POST['is_incoming_lessons'] == 1){
+if ($_GET['is_incoming_lessons'] == 1){
   $tmpDate = date("Y-m-d");
 }
 
@@ -42,7 +41,7 @@ for($i = 5; $i >= 1;) {
   }
 
   $lesson_date = date("Y-m-d", strtotime($tmpDate." ".($i+1)." day"));
-  if ($_POST['is_incoming_lessons'] == 1){
+  if ($_GET['is_incoming_lessons'] == 1){
     $lesson_date = date("Y-m-d", strtotime($tmpDate." ".($i-1)." day"));
   }
 
@@ -60,6 +59,16 @@ for($i = 5; $i >= 1;) {
   $tmp++;
   $tmp1++;
   if ($tmp1%3 == 0) {
+    $res['result'][] = array(
+      'book_id' => $tmp,
+      'teacher_id' => $i,
+      'teacher_name' => "Janica{$i}（ジャニカ）",
+      'image' => "http://ariellopez.info/f545.jpg",
+      'lesson_date' => $lesson_date,
+      'scheduled_start_time' => "24:30:00",
+      'studend_wish' => 'Student Wish',
+      'evaluation' => (mt_rand(1, 10) % 2 ? 1 : 0)
+    );
     $tmp1 = 0;
     $i--;
   }

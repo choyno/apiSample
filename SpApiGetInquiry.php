@@ -4,7 +4,7 @@ $msg = "";
 
 if (!isset($_GET['key']) || $_GET['key'] != 'Uggk45hcn98'){
   $msg = "key";
-} elseif (!isset($_POST['member_id']) || empty($_POST['member_id'])){
+} elseif (!isset($_GET['member_id']) || empty($_GET['member_id'])){
   $msg = "member_id";
 }
 

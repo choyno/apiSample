@@ -2,11 +2,11 @@
 
 $msg = "";
 
-/**if (!isset($_GET['key']) || $_GET['key'] != 'Uggk45hcn98'){
+if (!isset($_GET['key']) || $_GET['key'] != 'Uggk45hcn98'){
   $msg = "key";
-} else if (!isset($_POST['teacher_id']) || empty($_POST['teacher_id'])){
+} else if (!isset($_GET['teacher_id']) || empty($_GET['teacher_id'])){
   $msg = "teacher_id";
-}**/
+}
 
 if (!empty($msg)){
   printResult(array('result_code' => '201', 'result_message' => "{$msg} is required"));

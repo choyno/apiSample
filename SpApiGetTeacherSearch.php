@@ -1,6 +1,6 @@
 <?php
 
-$page = intval(@$_POST['page']) <= 0 ? 1 : intval($_POST['page']);
+$page = intval(@$_GET['page']) <= 0 ? 1 : intval($_GET['page']);
 
 $res = array(
   "result_code" => 0,
