@@ -6,8 +6,8 @@ if (!isset($_GET['key']) || $_GET['key'] != 'Uggk45hcn98'){
   $msg = "key";
 } elseif (!isset($_GET['book_id']) || empty($_GET['book_id'])){
   $msg = "book_id";
-} elseif (!isset($_GET['member_id']) || empty($_GET['member_id'])){
-  $msg = "member_id";
+} elseif (!isset($_GET['user_id']) || empty($_GET['user_id'])){
+  $msg = "user_id";
 }
 
 if (!empty($msg)){
@@ -25,7 +25,7 @@ $res = array(
   'image' => "http://{$_SERVER['HTTP_HOST']}/f545.jpg",
   'student_wish' => array(
     'lesson_style' => 'Lesson Style:Shunkan Eisakubun (Dondon)[Part2 Chapter25]',
-    'link' => 'http://eikaiwa.dmm.com/download/pdf/shunkan_eisakubun__shunkan-eisakubun01_48.pdf',
+    'link' => 'http://eikaiwa.dmm.com/download/pdf/toeic__DMM_TOEIC_Chapter01_b95c43cbd.pdf',//'http://eikaiwa.dmm.com/download/pdf/shunkan_eisakubun__shunkan-eisakubun01_48.pdf',
     'pronunciation' => 'Grammar/pron. errors:Correct positively',
     'written_words' => 'expressions:Use the chat box',
     'etc' => 'this is testing for cel'

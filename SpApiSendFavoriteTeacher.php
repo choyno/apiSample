@@ -4,8 +4,8 @@ $msg = "";
 
 if (!isset($_GET['key']) || $_GET['key'] != "Uggk45hcn98"){
   $msg = "key";
-} elseif (!isset($_POST['member_id']) || empty($_POST['member_id'])){
-  $msg = "member_id";
+} elseif (!isset($_POST['user_id']) || empty($_POST['user_id'])){
+  $msg = "user_id";
 } elseif (!isset($_POST['teacher_id']) || empty($_POST['teacher_id'])){
   $msg = "teacher_id";
 } elseif (!isset($_POST['is_fav']) || ($_POST['is_fav'] != 1 && $_POST['is_fav'] != -1)){
@@ -21,7 +21,7 @@ if (!empty($msg)){
 $res = array(
   'result_code' => 0,
   'result_message' => 'OK',
-  'member_id' => $_POST['member_id'],
+  'user_id' => $_POST['user_id'],
   'teacher_id' => $_POST['teacher_id'],
   'is_fav' => $_POST['is_fav']
 );

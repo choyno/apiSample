@@ -19,7 +19,10 @@ if ($page <= 4){
     $res['result'][] = array(
       'teacher_id' => $i,
       'teacher_name' => "NJanica#{$i}（ジャニカ）",
-      'teacher_type' => array("teacher_type1_{$i}", "teacher_type2_{$i}", "teacher_type3_{$i}"),
+      'teacher_type' => array(
+        "初心者向け",
+        "上級者向け",
+        "キッズ向け"),
       'country_id' => 2,
       'image' => "http://{$_SERVER['HTTP_HOST']}/f545.jpg"
     );

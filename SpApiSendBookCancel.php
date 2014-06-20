@@ -4,8 +4,8 @@ $name = "";
 
 if (!isset($_GET['key']) || $_GET['key'] != 'Uggk45hcn98'){
   $name = "key";
-} elseif (!isset($_POST['member_id']) || empty($_POST['member_id'])){
-  $name = "member_id";
+} elseif (!isset($_POST['user_id']) || empty($_POST['user_id'])){
+  $name = "user_id";
 } elseif (!isset($_POST['book_id']) || empty($_POST['book_id'])){
   $name = "book_id";
 }

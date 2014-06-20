@@ -1,9 +1,9 @@
 <?php
-
 $msg = "";
 
 if (!isset($_GET['key']) || $_GET['key'] != 'Uggk45hcn98'){
   $msg = "key";
+
 } else if (!isset($_GET['teacher_id']) || empty($_GET['teacher_id'])){
   $msg = "teacher_id";
 }
@@ -33,7 +33,10 @@ $res = array(
   "japanese" => "japanese words here",
   "youtube" => "youtube linke here",
   "is_fav" => 1,
-  "teacher_type" => array("type name1", "type name2"),
+  "teacher_type" => array(
+        "初心者向け",
+        "上級者向け",
+        "キッズ向け"),
   "evaluation" => array(
     array("evaluation_comment" => "evaluation comment here1", "member_name" => "User1", "regist_datetime" => "2014-01-24 12:22:45"),
     array("evaluation_comment" => "evaluation comment here2", "member_name" => "User2", "regist_datetime" => "2014-01-24 12:22:45"),

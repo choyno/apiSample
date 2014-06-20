@@ -9,9 +9,9 @@ $name = "";
   echo json_encode(array('get'));
 }
 exit; **/
-if (isset($_POST['member_id']) && isset($_GET['key']) && $_GET['key'] == 'Uggk45hcn98'){
-  if (empty($_POST['member_id'])){
-    $name = "member_id";
+if (isset($_POST['user_id']) && isset($_GET['key']) && $_GET['key'] == 'Uggk45hcn98'){
+  if (empty($_POST['user_id'])){
+    $name = "user_id";
   } elseif (empty($_POST['book_id'])){
     $name = "book_id";
   } elseif ($_POST['evaluation'] != 1 && $_POST['evaluation'] != -1){

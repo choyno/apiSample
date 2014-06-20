@@ -14,8 +14,8 @@
 </thead>
 <tbody>
 <tr>
-<td>member_id</td>
-<td> <input type="text" name="member_id" id="member_id" /></td>
+<td>user_id</td>
+<td> <input type="text" name="user_id" id="user_id" /></td>
 </tr>
 <tr>
 <td>teacher_id</td>

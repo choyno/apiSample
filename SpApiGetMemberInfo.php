@@ -4,8 +4,8 @@ $msg = "";
 
 if (!isset($_GET['key']) || $_GET['key'] != 'Uggk45hcn98'){
   $msg = "key";
-} else if (!isset($_GET['member_id']) || empty($_GET['member_id'])){
-  $msg = "member_id";
+} else if (!isset($_GET['user_id']) || empty($_GET['user_id'])){
+  $msg = "user_id";
 }
 
 if (!empty($msg)){
