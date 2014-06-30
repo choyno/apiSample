@@ -14,13 +14,15 @@ $i = 1;
 $i += ($page * 10) - 10;
 
 if ($page <= 5) {
+  $x = 0;
   for(; $i <= ($page * 10); $i++){
+    $x = $i > 61 ? ($i - 61) : $i;
     $res['result'][] = array(
       'teacher_id' => $i,
       'teacher_name' => "PJanica#{$i}（ジャニカ）",
-      'teacher_type' => array("日本語サポート"),
+      'teacher_type' => array("TOEICおまかせ"),
       'country_id' => 2,
-      'image' => "http://{$_SERVER['HTTP_HOST']}/f545.jpg"
+      'image' => "http://{$_SERVER['HTTP_HOST']}/images/{$x}.jpg"
     );
   }
 }

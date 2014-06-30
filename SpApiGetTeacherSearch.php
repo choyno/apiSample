@@ -21,7 +21,7 @@ if ($page <= 6) {
     $res['result'][] = array(
       'teacher_id' => $i,
       'teacher_name' => "RJanica#{$i}（ジャニカ）",
-      'teacher_type' => array("teacher_type #1"),
+      'teacher_type' => array("初心者向け"),
       'country_id' => 2,
       'image' => "http://{$_SERVER['HTTP_HOST']}/f545.jpg"
     );
