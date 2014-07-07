@@ -56,10 +56,9 @@ for($i = 5; $i >= 1;) {
     'evaluation' => (mt_rand(1, 10) % 2 ? 1 : 0)
   );
 
-  $tmp++;
   $tmp1++;
   if ($tmp1%3 == 0) {
-    $res['result'][] = array(
+   /** $res['result'][] = array(
       'book_id' => $tmp,
       'teacher_id' => $i,
       'teacher_name' => "Janica{$i}（ジャニカ）",
@@ -68,10 +67,11 @@ for($i = 5; $i >= 1;) {
       'scheduled_start_time' => "24:30:00",
       'studend_wish' => 'Student Wish',
       'evaluation' => (mt_rand(1, 10) % 2 ? 1 : 0)
-    );
+    ); **/
     $tmp1 = 0;
     $i--;
   }
+  $tmp++;
 }
 
 printResult($res);
